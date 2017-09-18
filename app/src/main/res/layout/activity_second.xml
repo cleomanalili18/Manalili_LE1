@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cleo.manalili_le1.SecondActivity">
+
+    <Button
+        android:id="@+id/btnReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return"
+        android:layout_marginTop="45dp"
+        android:onClick="goBackToMain"
+        android:layout_below="@+id/finalGrade"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/raGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Your RA is: "
+        android:layout_marginTop="43dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/finalGrade"
+        android:layout_alignEnd="@+id/finalGrade" />
+
+    <TextView
+        android:id="@+id/finalGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Your Final grade is: "
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/raGrade"
+        android:layout_toLeftOf="@+id/btnReturn"
+        android:layout_toStartOf="@+id/btnReturn" />
+
+</RelativeLayout>
